@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AppGestionCahierDeTexte.Models
+{
+    public class CahierTexte
+    {
+        [Key]
+        public int IdCahierTexte { get; set; }
+        [Required, MaxLength(150)]
+        public string TitreCahierTexte { get; set; }
+        [Required, MaxLength(250)]
+        public string DescriptionCahierTexte { get; set; }
+
+        public DateTime DateCahierTexte { get; set; }= DateTime.Now;
+
+        public int? Annee { get; set; }
+
+        public int? IdResponsableClasse { get; set; }
+        public virtual ResponsableClasse ResponsableClasse { get; set; }
+    }
+}
