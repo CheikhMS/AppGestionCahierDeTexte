@@ -30,6 +30,41 @@ namespace AppGestionCahierDeTexte.Shared
             }
             return laList;
         }
-        
+        public static List<ListItem> fillNiveau()
+        {
+            List<ListItem> laList = new List<ListItem>();
+            laList.Add(new ListItem
+            {
+                Value = null,
+                Text = "Selectionner"
+            });
+            laList.Add(new ListItem
+            {
+                Value = "L1",
+                Text = "Licence 1"
+            });
+            laList.Add(new ListItem
+            {
+                Value = "L2",
+                Text = "Licence 2"
+            });
+            laList.Add(new ListItem
+            {
+                Value = "L3",
+                Text = "Licence 3"
+            });
+            laList.Add(new ListItem
+            {
+                Value = "M1",
+                Text = "Master 1"
+            });
+            laList.Add(new ListItem
+            {
+                Value = "M2",
+                Text = "Master 2"
+            });
+            return laList;
+        }
+
     }
 }

@@ -38,9 +38,9 @@
             this.bntModifier = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSelectionner = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgMatiere = new System.Windows.Forms.DataGridView();
             this.cbbNiveau = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMatiere)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNiveau
@@ -103,6 +103,7 @@
             this.btnSupprimer.TabIndex = 23;
             this.btnSupprimer.Text = "&Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // bntModifier
             // 
@@ -113,6 +114,7 @@
             this.bntModifier.TabIndex = 22;
             this.bntModifier.Text = "&Modifier";
             this.bntModifier.UseVisualStyleBackColor = true;
+            this.bntModifier.Click += new System.EventHandler(this.bntModifier_Click);
             // 
             // btnAjouter
             // 
@@ -123,6 +125,7 @@
             this.btnAjouter.TabIndex = 21;
             this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnSelectionner
             // 
@@ -135,16 +138,16 @@
             this.btnSelectionner.UseVisualStyleBackColor = true;
             this.btnSelectionner.Click += new System.EventHandler(this.btnSelectionner_Click);
             // 
-            // dataGridView1
+            // dgMatiere
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(216, 61);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(572, 356);
-            this.dataGridView1.TabIndex = 17;
+            this.dgMatiere.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgMatiere.Location = new System.Drawing.Point(216, 61);
+            this.dgMatiere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgMatiere.Name = "dgMatiere";
+            this.dgMatiere.RowHeadersWidth = 62;
+            this.dgMatiere.RowTemplate.Height = 28;
+            this.dgMatiere.Size = new System.Drawing.Size(572, 356);
+            this.dgMatiere.TabIndex = 17;
             // 
             // cbbNiveau
             // 
@@ -171,11 +174,11 @@
             this.Controls.Add(this.bntModifier);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnSelectionner);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgMatiere);
             this.Name = "frmMatiere";
             this.Text = "Matiere";
             this.Load += new System.EventHandler(this.frmMatiere_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMatiere)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +196,7 @@
         private System.Windows.Forms.Button bntModifier;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnSelectionner;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgMatiere;
         private System.Windows.Forms.ComboBox cbbNiveau;
     }
 }
