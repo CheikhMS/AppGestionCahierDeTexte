@@ -15,6 +15,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+<<<<<<< HEAD
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,6 +31,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+=======
+>>>>>>> 144831db3548303097651918e5568eb9a203bba5
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -143,7 +146,10 @@
     <Compile Include="Models\CahierTexte.cs" />
     <Compile Include="Models\Classe.cs" />
     <Compile Include="Models\DetailsSyllabus.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\ListItem.cs" />
+=======
+>>>>>>> 144831db3548303097651918e5568eb9a203bba5
     <Compile Include="Models\Matiere.cs" />
     <Compile Include="Models\Professeur.cs" />
     <Compile Include="Models\ResponsableClasse.cs" />
@@ -151,7 +157,10 @@
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Shared\FillListOption.cs" />
+=======
+>>>>>>> 144831db3548303097651918e5568eb9a203bba5
     <Compile Include="Views\Parametre\frmAnneeAcademique.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +217,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
@@ -220,6 +230,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+=======
+>>>>>>> 144831db3548303097651918e5568eb9a203bba5
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
